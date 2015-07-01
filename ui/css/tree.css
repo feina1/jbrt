@@ -1,0 +1,84 @@
+
+	.node {
+	  cursor: pointer;
+	}
+	
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 1.5px;
+	}
+	
+	.node text {
+	  font: 10px sans-serif;
+	  font-size:15px
+	}
+	
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 1.5px;
+	}
+	
+	/* Movie details panel */
+
+	div#movieInfo {
+	    position: absolute;
+	    left: 100px;
+	    top: 200px;
+	    cursor: text;
+	    width: 230px;
+	    z-index: 1000;
+	    background: #E5E4D6;
+	    border: solid 1px #aaa;
+	    border-radius: 8px;    
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+	    font-size: 10px;    
+	    padding: 4px;
+	    text-align: left;
+		opacity: 0.8;
+	}
+	
+	div#movieInfo div#cover {
+	    text-align: left; 
+	    height: 50px;
+	}
+	
+	div#movieInfo div.t {
+	    font-size: 14px;
+	    font-weight: bold;
+	}	
+	
+	div#movieInfo div.f {
+	    border-top: 1px dotted #8E5981;
+	    margin-bottom: 3px;
+	    margin-top: 3px;
+	}
+	
+	div#movieInfo span.d {
+	    font-weight: bold;
+	}
+	
+	div#movieInfo span.c {
+	    font-style: italic;
+	}
+	
+	div#movieInfo span.l {
+	    font-size: 11px;
+	    color: #24553E;
+	    font-variant: small-caps;
+	}
+	
+	/* ....................................................................... */
+	/* On/off toggles for the help/info panels */
+	
+	div.panel_off {
+	    visibility: hidden;
+	    pointer-events: none;
+	}
+	
+	div.panel_on {
+	    visibility: visible;
+	    pointer-events: all;
+	}
+	
