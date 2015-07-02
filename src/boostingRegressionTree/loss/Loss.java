@@ -8,8 +8,6 @@ import boostingRegressionTree.Instance;
 
 public abstract class Loss {
 
-	public static double lambda;
-
 	public double get(ArrayList<Instance> data, double leftAddValue,
 			double rightAddValue, int splitIndex) {
 
@@ -45,8 +43,10 @@ public abstract class Loss {
 		return loss(data,0,data.size(),0);
 	}
 
+	
 	public double penalty(double trueDelta, double falseDelta, int size) {
 		return size*(trueDelta*trueDelta+falseDelta*falseDelta)*lambda;
 	}
+	public static double lambda=1;
 	
 }
