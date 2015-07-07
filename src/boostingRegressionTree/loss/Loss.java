@@ -47,6 +47,6 @@ public abstract class Loss {
 	public double penalty(double trueDelta, double falseDelta, int size) {
 		return size*(trueDelta*trueDelta+falseDelta*falseDelta)*lambda;
 	}
-	public static double lambda=1;
+	public static double lambda=0.3;
 	
 }
